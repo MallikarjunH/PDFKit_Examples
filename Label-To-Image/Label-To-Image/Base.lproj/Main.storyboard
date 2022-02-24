@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Label_To_Image" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mallikarjun H" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyU-Ar-ba2">
+                                <rect key="frame" x="136.5" y="84" width="141" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3Z4-Nm-Hlp"/>
+                                    <constraint firstAttribute="width" constant="141" id="WlO-9x-wuO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDb-DV-Zlo">
+                                <rect key="frame" x="125.5" y="160" width="163" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4ht-QV-Ntl"/>
+                                    <constraint firstAttribute="width" constant="163" id="zpg-z9-54b"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Convert to Image"/>
+                                <connections>
+                                    <action selector="convertToImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMM-NB-9xJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7bg-bo-pVN">
+                                <rect key="frame" x="87" y="243" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="caf-S6-3b6"/>
+                                    <constraint firstAttribute="height" constant="120" id="uWa-Lm-ZP8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7bg-bo-pVN" firstAttribute="top" secondItem="QDb-DV-Zlo" secondAttribute="bottom" constant="43" id="OVW-Qp-inS"/>
+                            <constraint firstItem="tyU-Ar-ba2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5f-AH-hdz"/>
+                            <constraint firstItem="tyU-Ar-ba2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="cRJ-Qx-OW8"/>
+                            <constraint firstItem="QDb-DV-Zlo" firstAttribute="top" secondItem="tyU-Ar-ba2" secondAttribute="bottom" constant="41" id="d0i-7e-S1v"/>
+                            <constraint firstItem="7bg-bo-pVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qnV-6v-6aR"/>
+                            <constraint firstItem="QDb-DV-Zlo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="umB-bg-sdd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="7bg-bo-pVN" id="d7h-mA-Rds"/>
+                        <outlet property="sampleLabel" destination="tyU-Ar-ba2" id="1ET-7j-EET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
