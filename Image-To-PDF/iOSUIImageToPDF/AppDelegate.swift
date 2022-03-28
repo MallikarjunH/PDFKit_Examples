@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  iOSUIImageToPDF
 //
-//  Created by Anupam Chugh on 09/10/19.
-//  Copyright © 2019 Anupam Chugh. All rights reserved.
-//
 
 import UIKit
 
