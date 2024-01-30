@@ -71,7 +71,6 @@ extension ViewController : URLSessionDownloadDelegate {
         DispatchQueue.main.async{
             
             OperationQueue.main.addOperation {
-                
                 self.spinner.stopAnimating()
                 self.present(activityViewController, animated: true, completion: nil)
             }
